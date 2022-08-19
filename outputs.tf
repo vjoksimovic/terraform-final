@@ -33,3 +33,8 @@ output "database_port" {
   description = "The port of the database"
   value       = aws_db_instance.tutorial_database.port
 }
+
+output "tutorial_alb" {
+  description = "The endpoint of the ALB"
+  value       = aws_lb.tutorial_alb
+}
